@@ -1,0 +1,421 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+hr {
+    border: 1px solid #DDD;
+    margin-right: 5px;
+}
+
+
+.header {
+    box-sizing: border-box;
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    padding: 0 1rem;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.header .left {
+    display: inline-block;
+    width: 169px;
+    text-align: center;
+    height: 56px;
+    line-height: 56px;
+}
+
+#list-btn {
+    float: left;
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    border-radius: 50%;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+
+#list-btn:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+#ytlogo {
+    display: inline-block;
+    height: 56px;
+    width: 120px;
+    background: url(../img/YouTube_Logo_2017.svg) no-repeat center center/cover;
+    background-size: 90px 20px;
+}
+
+.header .center {
+    display: inline-block;
+    width: 728px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .searchBarContainer {
+    position: absolute;
+    box-sizing: border-box;
+    width: 644px;
+    height: 40px;
+    padding: 0 4px 0 16px;
+    margin-left: 32px;
+    border: 1px solid #aaa;
+    border-radius: 30px;
+    box-shadow: inset;
+}
+
+#searchBar {
+    box-sizing: border-box;
+    width: 540px;
+    height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    padding: 1px 0;
+}
+
+#searchicon {
+    position: absolute;
+    right: 0%;
+    box-sizing: border-box;
+    width: 64px;
+    height: 38px;
+    padding: 1px 6px;
+    line-height: 40px;
+    text-align: center;
+    background: #f8f8f8;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 0.8px solid rgb(170, 170, 170);
+    border-radius: 0 40px 40px 0;
+    z-index: 1;
+}
+
+#searchicon:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+
+#speechicon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    right: 0%;
+    border-radius: 50%;
+}
+
+#speechicon:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+
+#speechicon i {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    width: 140px;
+    height: 40px;
+    font-size: 0px;
+}
+
+#videoIcon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+#videoIcon:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+
+#bellIcon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+#bellIcon:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+
+#accountIcon {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    padding: 1px 6px;
+}
+
+#account {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: lightcoral;
+    color: beige;
+    text-align: center;
+    line-height: 32px;
+    font-size: 1rem;
+}
+
+#account:hover {
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 240px;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    overflow-x: scroll;
+    padding-left: 12px;
+    padding-right: 5px;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 15px;
+}
+
+.sidebar h3 {
+    display: inline-block;
+    width: 216px;
+    height: 32px;
+    color: #0F0F0F;
+    padding: 6px 12px 4px;
+}
+
+.sidebar img {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.sidebar li {
+    box-sizing: border-box;
+    display: block;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    padding: 0 12px;
+    border-radius: 5px;
+}
+
+.sidebar li i {
+    text-align: center;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+
+.topbar {
+    height: 56px;
+    width: calc(100% - 240px);
+    position: fixed;
+    top: 56px;
+    left: 240px;
+    z-index: 1;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin-left: 45px;
+}
+
+.topbar:hover::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 15px;
+}
+
+.topbar li {
+    font-size: 14px;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 12px;
+    margin: 12px 12px 12px 0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.content {
+    width: calc(100% - 240px);
+    height: calc(100% - 112px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+}
+
+.inContent {
+    width: calc(100% - 152px);
+    height: 100%;
+    padding-top: 24px;
+    margin: auto;
+    font-size: 0;
+}
+
+.card {
+    display: inline-block;
+    width: 375px;
+    height: 370px;
+    font-size: 1rem;
+}
+
+.card>img {
+    width: 360px;
+    height: 203px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.card img:hover {
+    cursor: pointer;
+}
+
+.description {
+    width: 360px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.text:hover {
+    cursor: pointer;
+}
+
+.description img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+}
+
+.text {
+    width: 300px;
+    float: right;
+}
+
+.text h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #0F0F0F;
+    margin-bottom: 5px;
+}
+
+.text p {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.shorts {
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 550px;
+}
+
+.shorts i {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px 0 0;
+}
+
+.shorts h1 {
+    display: block;
+    margin: 24px 0 24px 8px;
+    font-size: 20px;
+}
+
+.shortsContainer {
+    width: 100%;
+    height: 75%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.shortsCards {
+    display: inline-block;
+    width: 186px;
+    height: 100%;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.shortsCards img {
+    width: 172px;
+    height: 304px;
+    border-radius: 15px;
+}
+
+.shortsCards :hover {
+    cursor: pointer;
+}
+
+.shortsCards h3 {
+    font-size: 1rem;
+    color: #0F0F0F;
+    padding: 12px 24px 4px 0;
+    font-weight: 500;
+}
+
+.shortsCards p {
+    font-size: 14px;
+    color: #606060
+}
+
+.down {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+    line-height: 40px;
+}
+
+.down:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+
+li:hover {
+    background: #ddd;
+    cursor: pointer;
+}
